@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.DetalleBookActivity"
+    >
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:src="@drawable/back"
+                android:tooltipText="Atras"
+                android:contentDescription="TODO">
+
+            </ImageButton>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nuevo_libro"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:paddingLeft="5dp">
+
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+     <TextView
+         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+         android:layout_gravity="top"
+         android:layout_marginTop="40dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25dp"
+         android:textStyle="italic"
+
+         android:text="@string/datos_del_nuevo_libro">
+
+     </TextView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="5dp"
+        android:layout_marginTop="80dp"
+        >
+
+        <EditText
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iso_book"
+            android:hint="@string/iso_del_libro"
+            android:autofillHints=""
+            android:inputType="number">
+
+        </EditText>
+
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/title_book"
+            android:hint="@string/titulo_del_libro"
+            android:inputType="text">
+
+        </EditText>
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/autor_book"
+            android:hint="@string/autor"
+            android:inputType="text">
+
+        </EditText>
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/genero_book"
+            android:hint="@string/genero_literario"
+            android:inputType="textAutoComplete">
+
+        </EditText>
+        <EditText
+            android:id="@+id/year_p"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/a_o_de_publicacion"
+            android:inputType="date">
+
+        </EditText>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_add"
+
+        android:background="@color/colorRecurso"
+        android:textColor="@android:color/white"
+        android:text="@string/save_book">
+
+    </Button>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

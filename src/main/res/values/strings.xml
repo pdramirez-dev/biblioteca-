@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Biblioteca</string>
+    <string name="title_activity_nu_book">Nuevo Libro</string>
+    <string name="save_book">Guardar Libro</string>
+    <string name="a_o_de_publicacion">Año de Publicacion</string>
+    <string name="genero_literario">Género Literario</string>
+    <string name="autor">Autor</string>
+    <string name="titulo_del_libro">Título del Libro</string>
+    <string name="iso_del_libro">Iso del Libro</string>
+    <string name="datos_del_nuevo_libro">Datos del Nuevo Libro</string>
+    <string name="nuevo_libro">Nuevo Libro</string>
+    <string name="buscar_libro">Buscar Libro</string>
+
+</resources>

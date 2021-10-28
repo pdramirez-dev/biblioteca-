@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.pdprogramer.biblioteca.main.MainActivity">
+    <item android:id="@+id/search"
+        app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@drawable/search"
+        android:title="Buscar">
+
+    </item>
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:title="Eliminar"
+        app:showAsAction="never" />
+</menu>
